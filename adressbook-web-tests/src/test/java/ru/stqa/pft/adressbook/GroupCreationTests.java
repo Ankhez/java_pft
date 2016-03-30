@@ -26,8 +26,10 @@ public class GroupCreationTests {
     @Test
     public void GroupCreationTests() {
         wd.get("http://localhost/addressbook/");
+        wd.findElement(By.name("user")).click();
+        wd.findElement(By.name("user")).sendKeys("admin");
         wd.findElement(By.name("pass")).click();
-        wd.findElement(By.name("pass")).sendKeys("\\undefined");
+        wd.findElement(By.name("pass")).sendKeys("secret");
         wd.findElement(By.cssSelector("html")).click();
         wd.findElement(By.xpath("//form[@id='LoginForm']/input[3]")).click();
         wd.findElement(By.cssSelector("html")).click();
