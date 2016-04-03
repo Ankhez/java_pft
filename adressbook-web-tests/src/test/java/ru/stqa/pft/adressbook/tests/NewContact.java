@@ -11,9 +11,9 @@ import org.openqa.selenium.*;
 import ru.stqa.pft.adressbook.model.FillForm;
 import ru.stqa.pft.adressbook.model.LoginPar;
 
-public class NewContact {
+public class NewContact extends TestBase{
     FirefoxDriver wd;
-    
+
     @BeforeMethod
     public void setUp() throws Exception {
         wd = new FirefoxDriver();
@@ -65,7 +65,7 @@ public class NewContact {
     public void tearDown() {
         wd.quit();
     }
-    
+
     public static boolean isAlertPresent(FirefoxDriver wd) {
         try {
             wd.switchTo().alert();
