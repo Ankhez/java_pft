@@ -16,6 +16,6 @@ public class SessionHelper extends HelperBase{
     type(By.name("pass"),password);
     wd.findElement(By.cssSelector("html")).click();
     click(By.xpath("//form[@id='LoginForm']/input[3]"));
-    wd.findElement(By.cssSelector("html")).click();
+
   }
 }
