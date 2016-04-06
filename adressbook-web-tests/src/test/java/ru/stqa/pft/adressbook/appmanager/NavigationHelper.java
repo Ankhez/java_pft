@@ -1,6 +1,7 @@
 package ru.stqa.pft.adressbook.appmanager;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import ru.stqa.pft.adressbook.model.GroupData;
 import ru.stqa.pft.adressbook.model.NewAddDate;
@@ -11,7 +12,7 @@ import ru.stqa.pft.adressbook.model.NewAddDate;
 public class NavigationHelper extends HelperBase{
 
 
-  public NavigationHelper(FirefoxDriver wd) {
+  public NavigationHelper(WebDriver wd) {
     super(wd);
 
   }
