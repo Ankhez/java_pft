@@ -10,7 +10,7 @@ public class NewContactModificationTest extends TestBase {
   @Test
   public void testNewContactModificationTest(){
     app.getNavigationHelper().editNewAdd();
-    app.getNavigationHelper().fillNewAddForm(new NewAddDate("1233", "3212", "222"));
+    app.getNavigationHelper().fillNewAddForm(new NewAddDate("1233", "3212", "222","test1"),false);
     app.getNavigationHelper().clickEndUpdate();
 
   }
